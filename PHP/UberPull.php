@@ -6,8 +6,8 @@ class UberPull extends Car {
 
     function __construct($license, $driver, $brand, $model) {
         parent::__construct($license, $driver);
-        this->model = $model;
-        this->brand = $brand;
+        $this->brand = $brand;
+        $this->model = $model;       
     }
 
 }
