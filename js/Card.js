@@ -1,13 +1,12 @@
-function Card(license, driver) {
-    this.id = null;
-    this.license = license;
-    this.driver = driver;
-    this.passengenger = null;
-}
+import Payment from "./Payment.js";
 
-Card.prototype.printData = function() {
-    console.log(`Card license: ${this.license}`)
-    console.log('Card driver: ' + this.driver.name)
+class Card extends Payment {
+    constructor(id, numberCard, dateCard, cvv){
+        super(id);
+        this.numberCard = numberCard;
+        this.dateCard = dateCard;
+        this.cvv = cvv;
+    }
 }
 
 export default Card;

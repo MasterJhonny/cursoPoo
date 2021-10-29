@@ -1,0 +1,10 @@
+import Car from './Car.js'
+class UberX extends Car {
+    constructor(license, driver, brand, model){
+        super(license, driver);
+        this.brand = brand;
+        this.model = model;
+    }
+}
+
+export default UberX;

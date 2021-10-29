@@ -1,10 +1,13 @@
 from car import Car
-from account import Account
-
+from driver import Driver
+from uberX import UberX
+from uberBlack import UberBlack
 if __name__ == "__main__":
-    print("hola Mundo") 
+    car = UberX("ASDF3245", Driver("Juan Mamani", "34545454"), "Toyota", "2020")
+    car1 = UberBlack("ASDF3245", Driver("Juan Mamani", "34545454"), "Coll", "lino fino")
 
-    car = Car("MSD532", Account("Andres Herrera", "k345j4k5"))
+    car.setPasengers(4)
+    print(car.getPasengers())
 
     print(vars(car))
-    car.driver.saludar()
+    print(vars(car1))

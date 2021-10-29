@@ -10,6 +10,9 @@ class Account {
         $this->name = $name;
         $this->document = $document;
     }
+    function getName(){
+        echo "the name of Driver is: " . $this->name;
+    }
 }
 
 

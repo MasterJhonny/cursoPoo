@@ -1,15 +1,23 @@
 <?php
 require_once('Car.php');
-require_once('Account.php');
+require_once('Driver.php');
 require_once('UberX.php');
-require_once('UberPull.php');
+require_once('UberVan.php');
 
-$UberX = new UberX("ASD345", new Account("Frederic Taylor", "ADS546565"), "Toyota", "2021");
+$car = new Car("FDGH", new Driver("Freddy Mamani", "ERTY3456"));
 
-$UberX->printDataCar();
+$UberX = new UberX("ASD345", new Driver("Frederic Taylor", "ADS546565"), "Toyota", "2021");
+
+// $UberX->setPasenger(4);
+// $UberX->printDataCar();
 
 
-$UberPoll = new UberPull("AS4566", new Account("Andrea Herrera", "ASDF546565"), "DOYTE", "Acrfg");
+echo "hola Mundo<br>";
+$UberVan = new UberVan("QWER1234", new Driver("Andrea Herrera", "ASDF1234"), "DOYTE", "2020");
 
-$UberPoll->printDataCar();
+$UberVan->setPasenger(6);
+$UberVan->printDataCar();
+echo $UberVan->getPasenger();
+
+
 

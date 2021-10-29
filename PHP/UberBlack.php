@@ -6,7 +6,7 @@ class UberBlack extends Car {
 
     function __construct($license, $driver, $typeCardAcepted, $material) {
         parent::__construct($license, $driver);
-        this->typeCardAcepted = $typeCardAcepted;
-        this->material = $material;
+        $this->typeCardAcepted = $typeCardAcepted;
+        $this->material = $material;
     }
 }
